@@ -1,0 +1,61 @@
+<div class="topic-container">
+  <div class="topic-heading">
+    <img class="logo" src="../../../assets/icons/handshake.jpg">
+    <div class="name">SOCIAL CONNECTOR</div>
+  </div>
+  <!-- <div class="topic-content-container">
+  <div class="topic-content" *ngFor="let topic of a">
+    {{topic.name}}
+  </div>
+  </div> -->
+  <div style="margin-top: 13px;">
+    <mat-accordion>
+      <mat-expansion-panel [expanded]="true">
+        <mat-expansion-panel-header class="specific-class">
+          Topics
+        </mat-expansion-panel-header>
+        <div class="topic-content" *ngFor="let topic of a">
+            {{topic.name}}
+          </div>        
+      </mat-expansion-panel>
+      <mat-expansion-panel >
+          <mat-expansion-panel-header class="specific-class">
+            Test Menu 1
+          </mat-expansion-panel-header>        
+        </mat-expansion-panel>
+        <mat-expansion-panel >
+            <mat-expansion-panel-header class="specific-class">
+              Test Menu 2
+            </mat-expansion-panel-header>        
+          </mat-expansion-panel>
+          <mat-expansion-panel >
+              <mat-expansion-panel-header class="specific-class">
+                Test Menu 3
+              </mat-expansion-panel-header>        
+            </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+
+
+</div>
+<!-- <mat-accordion>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        This is the expansion 1 title
+      </mat-expansion-panel-header>
+  
+      This the expansion 1 content
+  
+    </mat-expansion-panel>
+  
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        This is the expansion 2 title
+      </mat-expansion-panel-header>
+  
+      This the expansion 2 content
+  
+    </mat-expansion-panel>
+  
+  </mat-accordion> -->

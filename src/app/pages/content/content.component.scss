@@ -1,0 +1,32 @@
+.content-holder{
+    height: 100%;
+    width: 100%;
+}
+
+.topbar-holder{
+    height: 13%;
+}
+
+:host /deep/ .mat-tab-group{
+    height: 100%;
+}
+
+:host /deep/ .mat-tab-body-wrapper{
+    height: 100%;
+}
+
+
+:host /deep/ .mat-tab-label{
+font-family: sans-serif;
+font-weight: bolder;
+font-size: 18px;
+}
+
+:host /deep/ .mat-tab-body-content{
+    overflow: hidden;
+}
+
+
+:host /deep/ .mat-tab-body{
+    overflow: hidden;
+}

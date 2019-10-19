@@ -1,0 +1,15 @@
+.content-container {
+  display: flex;
+  height: 100%;
+}
+
+.content-left {
+  flex: 1 1 12%;
+  height: 100%;
+  background-color: #212121;
+}
+
+.content-right {
+  flex: 1 1 82%;
+  height: 100%;
+}
