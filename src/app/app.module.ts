@@ -12,6 +12,8 @@ import { AppvMaterialsModule } from './modules/appv-materials/appv-materials.mod
 import { ResultsComponent } from './pages/content/results/results.component';
 import { PostsComponent } from './pages/content/results/posts/posts.component';
 import { GraphContainerComponent } from './pages/content/results/graph-container/graph-container.component';
+import {HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { GraphContainerComponent } from './pages/content/results/graph-container
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AppvMaterialsModule
+    AppvMaterialsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

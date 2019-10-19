@@ -1,4 +1,5 @@
 <div class="post-container" >
+    <div class="refresh"><input (click)="refresh()" type="image" style="height: 26px;" src="../../../../../assets/icons-new/refresh.png"/></div>
   <div class="inner-post-container" style="overflow-y: scroll; height: -webkit-fill-available;">
   <div *ngFor="let post of posts" class="post-inner">
     <div class="post-left">
@@ -7,11 +8,11 @@
           <img class="image" src="{{post.picture}}" />
         <div class="post-content cursive">{{post.content}}</div>
       </div>
-      <div class="published-on cursive"><span class="published">Published On :</span> <span class="pub-date">{{post.publishedOn}} |</span> <span class="published">{{post.platform}}</span></div>
+      <div class="published-on cursive"><span class="published">Published On :</span> <span class="pub-date">{{post.publishedOn}} |</span> <span class="published"><img src="../../../../../assets/icons-new/{{post.platform | lowercase}}.png" style="height: 43px;"/></span></div>
     </div>
     <div class="post-right cursive">
-      <div class="like-comment-container"><span style="padding-right: 11px;"><img src="../../../../../assets/icons/like.png" style="width: 51px;"/></span> : <span style="padding-left: 14px;">{{post.totalNumberOfLikes}}</span></div>
-      <div class="like-comment-container"><span style="padding-right: 11px;"><img src="../../../../../assets/icons/comment.png" style="width: 51px;"/></span> : <span style="padding-left: 14px;">{{post.totalNumberOfComments}}</span></div>
+      <div class="like-comment-container"><span style="padding-right: 11px;display: flex;"><img src="../../../../../assets/icons-new/like.png" style="width: 51px;"/></span> : <span style="padding-left: 14px;">{{post.totalNumberOfLikes}}</span></div>
+      <div class="like-comment-container"><span style="padding-right: 11px; display: flex;"><img src="../../../../../assets/icons-new/comment.png" style="width: 51px;"/></span> : <span style="padding-left: 14px;">{{post.totalNumberOfComments}}</span></div>
       <!-- <div></div> -->
     </div>
   </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TopicsService } from './../../../../core/services/topics.service';
 declare let d3: any;
 
 @Component({
@@ -7,13 +8,16 @@ declare let d3: any;
   styleUrls: ['./graph-container.component.scss']
 })
 export class GraphContainerComponent implements OnInit {
-  constructor() {}
+  constructor(public topicService: TopicsService) {}
 
   ngOnInit() {
 
-
+    this.topicService.getTopicsGraphData().subscribe(i=>{
+      console.log(i,"reaction");
+      
+    })
     // tslint:disable-next-line: prefer-const
-    let margin = { top: 30, right: 50, bottom: 80, left: 50 };
+    let margin = { top: 30, right: 50, bottom: 70, left: 85 };
     // tslint:disable-next-line: prefer-const
     let width = document.getElementById('outer').offsetWidth - margin.left - margin.right; // Use the window's width
     // tslint:disable-next-line: prefer-const

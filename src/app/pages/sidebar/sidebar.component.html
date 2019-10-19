@@ -1,7 +1,7 @@
 <div class="topic-container">
   <div class="topic-heading">
     <img class="logo" src="../../../assets/icons/handshake.jpg">
-    <div class="name">SOCIAL CONNECTOR</div>
+    <div class="name">Influencer's Platform</div>
   </div>
   <!-- <div class="topic-content-container">
   <div class="topic-content" *ngFor="let topic of a">
@@ -12,32 +12,32 @@
     <mat-accordion>
       <mat-expansion-panel [expanded]="true">
         <mat-expansion-panel-header class="specific-class">
-          Topics
+          <div style="display: flex; align-items: center;"><img style="height: 28px;" src="../../../assets/icons-new/text.ico"/><span style="padding-left: 14px;">Topics</span></div>
         </mat-expansion-panel-header>
-        <div class="topic-content" *ngFor="let topic of a">
+        <div class="topic-content" *ngFor="let topic of a" id= {{topic.topicId}}>
             {{topic.name}}
           </div>        
       </mat-expansion-panel>
       <mat-expansion-panel >
           <mat-expansion-panel-header class="specific-class">
-            Test Menu 1
-          </mat-expansion-panel-header> 
+              <div style="display: flex; align-items: center;"><img style="height: 21px;" src="../../../assets/icons-new/chart.png"/><span style="padding-left: 14px;">Test Menu 1</span></div>
+            </mat-expansion-panel-header> 
           <div class="topic-content-unselected"> test data 1</div>  
           <div class="topic-content-unselected"> test data 1</div>       
           <div class="topic-content-unselected"> test data 1</div>            
         </mat-expansion-panel>
         <mat-expansion-panel >
             <mat-expansion-panel-header class="specific-class">
-              Test Menu 2
-            </mat-expansion-panel-header>  
+                <div style="display: flex; align-items: center;"><img style="height: 23px;" src="../../../assets/icons-new/phone.png"/><span style="padding-left: 14px;">Test Menu 2</span></div>
+              </mat-expansion-panel-header>  
             <div class="topic-content-unselected"> test data 1</div>  
             <div class="topic-content-unselected"> test data 1</div>       
             <div class="topic-content-unselected"> test data 1</div>          
           </mat-expansion-panel>
           <mat-expansion-panel >
               <mat-expansion-panel-header class="specific-class">
-                Test Menu 3
-              </mat-expansion-panel-header>   
+                  <div style="display: flex; align-items: center;"><img style="height: 28px;" src="../../../assets/icons-new/text.ico"/><span style="padding-left: 14px;">Test Menu 3</span></div>
+                </mat-expansion-panel-header>   
               <div class="topic-content-unselected"> test data 1</div>  
               <div class="topic-content-unselected"> test data 1</div>       
               <div class="topic-content-unselected"> test data 1</div>         

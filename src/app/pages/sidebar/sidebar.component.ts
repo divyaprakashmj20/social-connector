@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Topics } from '../../core/model/response/topics.model';
+import { TopicsService } from './../../core/services/topics.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -9,18 +10,15 @@ import { Topics } from '../../core/model/response/topics.model';
 export class SidebarComponent implements OnInit {
   a: Topics[] = [];
 
-  constructor() {}
+  constructor(public topicsService: TopicsService) {}
 
   ngOnInit() {
-    let b = new Topics();
-    b.name = '#traveldotearth';
-    b.topicId = '3312312313213';
-    this.a.push(b);
 
-    // let c = new Topics();
-    // c.name = '#setdfsfsd';
-    // c.topicId = '231312313213';
-    // this.a.push(c);
-    // console.log(this.a);
+    this.topicsService.getTopics().subscribe(i=>{
+      // console.log(i);
+      this.a = i['topics'];
+      console.log(this.a);
+    });
+
   }
 }
