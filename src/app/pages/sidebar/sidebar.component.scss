@@ -33,6 +33,20 @@
 
 }
 
+.topic-content-unselected {
+  color:   #ffffffd1;;
+  height: 41px;
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  padding-left: 15px;
+  cursor: pointer;
+  background-color: #212121;
+  margin-top: 10px;
+  font-size: 16px;
+
+}
+
 // .topic-content :hover {
 //     background-color: #3131316b !important;
 // }

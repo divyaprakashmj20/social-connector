@@ -11,6 +11,7 @@ import { TopbarComponent } from './pages/content/topbar/topbar.component';
 import { AppvMaterialsModule } from './modules/appv-materials/appv-materials.module';
 import { ResultsComponent } from './pages/content/results/results.component';
 import { PostsComponent } from './pages/content/results/posts/posts.component';
+import { GraphContainerComponent } from './pages/content/results/graph-container/graph-container.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { PostsComponent } from './pages/content/results/posts/posts.component';
     ContentComponent,
     ResultsComponent,
     PostsComponent,
+    GraphContainerComponent,
   ],
   imports: [
     BrowserModule,

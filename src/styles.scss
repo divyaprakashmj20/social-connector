@@ -9,3 +9,38 @@ body {
     background: #F8F8F8 0% 0% no-repeat padding-box;
     letter-spacing: 1px;
 }
+
+
+.line {
+    fill: none;
+    stroke: #ffab00;
+    stroke-width: 3;
+}
+  
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+/* Style the dots by assigning a fill and stroke */
+.dot {
+    fill: #ffab00;
+    stroke: #fff;
+}
+  
+  .focus circle {
+  fill: none;
+  stroke: steelblue;
+}
+
+.xaxis{
+    color: rgba(255, 255, 255, 0.438);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.yaxis{
+    color: rgba(255, 255, 255, 0.438);
+    font-size: 17px;
+    font-weight: bold;
+}
